@@ -1,0 +1,28 @@
+body {
+    background-color:red !important;
+}
+.clickanim{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(to top, purple,pink);
+    position: absolute;
+    z-index: 1;
+    transform: scale(0);
+    transform-origin: center;
+    animation: clickanim 1s ease-in-out;
+}
+
+@keyframes clickanim{
+    0%{
+       transform: scale(0); 
+    }
+    50%{
+        transform: scale(2); 
+        opacity: 1;
+     }
+     0%{
+        transform: scale(0); 
+        opacity: 0;
+     }
+}
