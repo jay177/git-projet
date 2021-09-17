@@ -1,28 +1,58 @@
-body {
-    background-color:red !important;
+
+
+.breadcrumb {
+    background-color: aquamarine !important;
 }
-.clickanim{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: linear-gradient(to top, purple,pink);
-    position: absolute;
-    z-index: 1;
-    transform: scale(0);
-    transform-origin: center;
-    animation: clickanim 1s ease-in-out;
+.alert {
+    background-color: gainsboro !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@keyframes clickanim{
-    0%{
-       transform: scale(0); 
-    }
-    50%{
-        transform: scale(2); 
-        opacity: 1;
-     }
-     0%{
-        transform: scale(0); 
+body{
+    background-color: saddlebrown;
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+}
+
+
+
+
+
+section{
+    height: 100vh;
+}
+span{
+    position: absolute;
+    pointer-events: none;
+    background: #ffffff;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: scale(0) translateY(0) rotate(0deg);
         opacity: 0;
-     }
+    }
+    10%{
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
+}
+.img-polaroid {
+    size: 1000px !important;
+    display: hidden !important;
 }

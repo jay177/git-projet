@@ -1,14 +1,27 @@
-<<<<<<< Updated upstream
-window.addEventListener('click', (e) => {
-    const rond = document.createElement('div');
-    rond.className = 'clickanim';
-    rond.style.top = `${e.pageY - 15}px`
-    rond.style.left = `${e.pageX - 15}px`
-    document.body.appendChild(rond);
-    setTimeout(() => {
-        rond.remove();
-    }, 1500)
-})
-=======
-document.getElementsByTagName('body')[0].classList.add('override')
->>>>>>> Stashed changes
+
+    function carre(){
+        const section = document.querySelector('section');
+        const square = document.createElement('span');
+
+        var taille = Math.random() * 50;
+
+        square.style.width = 20 + taille + 'px';
+        square.style.height = 20 + taille + 'px';
+       
+        square.style.top = Math.random() * innerHeight + 'px';
+        square.style.left = Math.random() * innerWidth + 'px';
+
+        const bg = color[Math.floor(Math.random() * color.length)];
+        square.style.background = bg;
+
+        section.appendChild(square);
+
+         setTimeout(() => {
+             square.remove()
+         },5000)
+
+    }
+
+    setInterval(carre , 150)
+
+
