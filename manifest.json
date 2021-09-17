@@ -10,7 +10,11 @@
       {
         "matches": ["*://*.leonard-de-vinci.net/*"],
         "js": ["override-devinci.js"],
+<<<<<<< Updated upstream
         "css": ["override-devinci.css"]
+=======
+        "css": ["override-devinci.css", "louis.css"]
+>>>>>>> Stashed changes
       }
     ]
  

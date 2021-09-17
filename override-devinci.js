@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 window.addEventListener('click', (e) => {
     const rond = document.createElement('div');
     rond.className = 'clickanim';
@@ -8,3 +9,6 @@ window.addEventListener('click', (e) => {
         rond.remove();
     }, 1500)
 })
+=======
+document.getElementsByTagName('body')[0].classList.add('override')
+>>>>>>> Stashed changes
