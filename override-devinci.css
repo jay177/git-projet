@@ -1,0 +1,93 @@
+
+
+
+.breadcrumb {
+    background-color: aquamarine !important;
+}
+.alert {
+    background-color: gainsboro !important;
+}
+=======
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: saddlebrown;
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+}
+
+
+
+
+
+section{
+    height: 100vh;
+}
+=======
+}
+
+body{
+    background-color: saddlebrown;
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+}
+
+
+
+
+
+section{
+    height: 100vh;
+}
+
+span{
+    position: absolute;
+    pointer-events: none;
+    background: #ffffff;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: scale(1) translateY(-250%) rotate(520deg);
+        opacity: 0;
+
+    }
+    10%{
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+=======
+    }
+    10%{
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: scale(1) translateY(-500%) rotate(520deg);
+        opacity: 0;
+    }
+}
+
+.img-polaroid {
+    size: 1000px !important;
+    display: hidden !important;
+}
+=======
+
